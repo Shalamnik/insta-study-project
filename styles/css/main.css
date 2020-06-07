@@ -4,12 +4,13 @@ body, html {
 }
 
 .nav-container {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   width: 100%;
   height: 54px;
   position: fixed;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 0.5px solid lightgrey;
   background-color: white;
   z-index: 10;
   display: flex;
@@ -27,6 +28,7 @@ main {
   padding: 0 20px;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
 }
 .header__navbar .nav-item .btn.btn-primary {
   height: 30px;
@@ -43,8 +45,7 @@ main {
 .header__navbar .navbar-brand {
   width: 360px;
   height: 36px;
-  display: flex;
-  align-items: center;
+  margin-top: 14px;
 }
 .header__navbar .nav-item.right {
   text-align: right;
@@ -66,6 +67,7 @@ main {
   width: 215px;
   height: 28px;
   border-radius: 3px;
+  box-sizing: border-box;
 }
 .nav-item.search input {
   text-align: center;
