@@ -26,21 +26,25 @@
 .container-fluid .navbar .navbar-brand {
   min-width: 40px;
 }
-.container-fluid .navbar .nav-item.search input {
-  text-align: center;
+.container-fluid .navbar .nav-item.search {
+  border: 1px solid lightgrey;
   min-width: 125px;
   width: 215px;
   height: 28px;
-  margin: 0 auto;
-  border: 1px solid lightgrey;
   border-radius: 3px;
+}
+.container-fluid .navbar .nav-item.search input {
+  text-align: center;
+  margin-top: 1px;
+  border: none;
   font-size: 14px;
   line-height: 18px;
+  padding: 3px 5px;
 }
 .container-fluid .navbar .nav-item.search img {
   position: relative;
   top: 0px;
-  left: 88px;
+  left: 72px;
 }
 .container-fluid .navbar .nav-item.right {
   height: 30px;
