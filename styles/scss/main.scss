@@ -1,11 +1,24 @@
-.container-fluid {
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: 54px;
+    position: fixed;
+    border-bottom: 1px solid lightgrey;
+    background-color: white;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
 
-    main {
-        position: absolute;
-        top: 54px;
-    }
+main {
+    position: relative;
+    top: 54px;
 }
 
 @import 'navbar';

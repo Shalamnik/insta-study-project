@@ -1,11 +1,9 @@
-.navbar {
-    width: 100%;
-    position: fixed;
+.header__navbar {
+    margin: 0 auto;
+    max-width: 935px;
     padding: 0 20px;
-    height: 54px;
-    border-bottom: 1px solid lightgray;
-    background-color: white;
-    z-index: 10;
+    display: flex;
+    align-items: center;
 
     .nav-item {
         .btn.btn-primary {
@@ -23,10 +21,15 @@
     }
 
     .navbar-brand {
-        min-width: 40px;
+        width: 360px;
+        height: 36px;
+        display: flex;
+        align-items: center;
     }
 
     .nav-item.right {
+        text-align: right;
+        width: 360px;
         height: 30px;
     }
 
