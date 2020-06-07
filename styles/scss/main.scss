@@ -44,14 +44,19 @@
                 font-size: 14px;
                 line-height: 18px;
                 padding: 3px 5px;
+
+                &:focus {
+                    outline: none;
+                    text-align: left;
+                }
+            }
+
+            img {
+                position: relative;
+                top: 0px;
+                left: 72px;
             }
             
-        }
-
-        .nav-item.search img {
-            position: relative;
-            top: 0px;
-            left: 72px;
         }
 
         .nav-item.right {

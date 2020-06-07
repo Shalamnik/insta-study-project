@@ -41,6 +41,10 @@
   line-height: 18px;
   padding: 3px 5px;
 }
+.container-fluid .navbar .nav-item.search input:focus {
+  outline: none;
+  text-align: left;
+}
 .container-fluid .navbar .nav-item.search img {
   position: relative;
   top: 0px;
