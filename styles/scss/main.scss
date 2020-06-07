@@ -5,9 +5,36 @@
     .navbar {
         padding: 0 20px;
         height: 54px;
+        border-bottom: 1px solid lightgray;
+
+        .nav-item {
+            .btn.btn-primary {
+                height: 30px;
+                width: 62.73px;
+                background-color: #0095f6;
+                box-sizing: border-box;
+                font-weight: 600;
+                padding: 5px 9px;
+                text-align: center;
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
 
         .navbar-brand {
             min-width: 40px;
+        }
+
+        .nav-item.search input{
+            text-align: center;
+        }
+
+        .nav-item.right {
+            height: 30px;
+        }
+
+        .reg-link {
+            margin-left: 15px;
         }
     }
 }
