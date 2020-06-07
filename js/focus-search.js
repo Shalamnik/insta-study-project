@@ -1,4 +1,4 @@
-let inputEl = document.querySelector('.nav-item.search input');
+let inputEl = document.querySelector('.header__search input');
 let inputSearchImg = document.querySelector('.search-img');
 let inputQuitImg = document.querySelector('.quit-img');
 
