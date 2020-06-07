@@ -45,10 +45,15 @@
   outline: none;
   text-align: left;
 }
-.container-fluid .navbar .nav-item.search img {
+.container-fluid .navbar .nav-item.search .search-img {
   position: relative;
   top: 0px;
   left: 72px;
+}
+.container-fluid .navbar .nav-item.search .quit-img {
+  position: relative;
+  top: -25px;
+  left: 185px;
 }
 .container-fluid .navbar .nav-item.right {
   height: 30px;
