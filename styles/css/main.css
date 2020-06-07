@@ -28,6 +28,19 @@
 }
 .container-fluid .navbar .nav-item.search input {
   text-align: center;
+  min-width: 125px;
+  width: 215px;
+  height: 28px;
+  margin: 0 auto;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.container-fluid .navbar .nav-item.search img {
+  position: relative;
+  top: 0px;
+  left: 88px;
 }
 .container-fluid .navbar .nav-item.right {
   height: 30px;
