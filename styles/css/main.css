@@ -2,7 +2,12 @@
   padding: 0;
   margin: 0;
 }
-.container-fluid .navbar {
+.container-fluid main {
+  position: absolute;
+  top: 54px;
+}
+
+.navbar {
   width: 100%;
   position: fixed;
   padding: 0 20px;
@@ -11,7 +16,7 @@
   background-color: white;
   z-index: 10;
 }
-.container-fluid .navbar .nav-item .btn.btn-primary {
+.navbar .nav-item .btn.btn-primary {
   height: 30px;
   width: 62.73px;
   background-color: #0095f6;
@@ -23,42 +28,13 @@
   line-height: 18px;
   border: none;
 }
-.container-fluid .navbar .navbar-brand {
+.navbar .navbar-brand {
   min-width: 40px;
 }
-.container-fluid .navbar .nav-item.search {
-  border: 1px solid lightgrey;
-  min-width: 125px;
-  width: 215px;
-  height: 28px;
-  border-radius: 3px;
-}
-.container-fluid .navbar .nav-item.search input {
-  text-align: center;
-  margin-top: 1px;
-  border: none;
-  font-size: 14px;
-  line-height: 18px;
-  padding: 3px 5px;
-}
-.container-fluid .navbar .nav-item.search input:focus {
-  outline: none;
-  text-align: left;
-}
-.container-fluid .navbar .nav-item.search .search-img {
-  position: relative;
-  top: 0px;
-  left: 72px;
-}
-.container-fluid .navbar .nav-item.search .quit-img {
-  position: relative;
-  top: -25px;
-  left: 185px;
-}
-.container-fluid .navbar .nav-item.right {
+.navbar .nav-item.right {
   height: 30px;
 }
-.container-fluid .navbar .reg-link {
+.navbar .reg-link {
   margin-left: 15px;
   font-size: 14px;
   font-weight: 600;
@@ -66,9 +42,35 @@
   color: rgba(var(--d69, 0, 149, 246), 1);
   text-decoration: none;
 }
-.container-fluid main {
-  position: absolute;
-  top: 54px;
+
+.nav-item.search {
+  border: 1px solid lightgrey;
+  min-width: 125px;
+  width: 215px;
+  height: 28px;
+  border-radius: 3px;
+}
+.nav-item.search input {
+  text-align: center;
+  margin-top: 1px;
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 3px 5px;
+}
+.nav-item.search input:focus {
+  outline: none;
+  text-align: left;
+}
+.nav-item.search .search-img {
+  position: relative;
+  top: 0px;
+  left: 72px;
+}
+.nav-item.search .quit-img {
+  position: relative;
+  top: -25px;
+  left: 185px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,76 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    padding: 0 20px;
+    height: 54px;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+    z-index: 10;
+
+    .nav-item {
+        .btn.btn-primary {
+            height: 30px;
+            width: 62.73px;
+            background-color: #0095f6;
+            box-sizing: border-box;
+            font-weight: 600;
+            padding: 5px 9px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 18px;
+            border: none;
+        }
+    }
+
+    .navbar-brand {
+        min-width: 40px;
+    }
+
+    .nav-item.right {
+        height: 30px;
+    }
+
+    .reg-link {
+        margin-left: 15px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 28px;
+        color: rgba(var(--d69,0,149,246),1);
+        text-decoration: none;
+    }
+}
+
+.nav-item.search {
+    border: 1px solid lightgrey;
+    min-width: 125px;
+    width: 215px;
+    height: 28px;
+    border-radius: 3px;
+
+    input {
+        text-align: center;
+        margin-top: 1px;
+        border: none;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 3px 5px;
+
+        &:focus {
+            outline: none;
+            text-align: left;
+        }
+    }
+
+    .search-img {
+        position: relative;
+        top: 0px;
+        left: 72px;
+    }
+
+    .quit-img {
+        position: relative;
+        top: -25px;
+        left: 185px;
+    }
+    
+}
