@@ -1,17 +1,83 @@
 .header-info {
     position: relative;
-    top: 130px;
-    margin: 0 auto;
-    max-width: 975px;
+    top: 85px;
+    margin: 0px auto 44px;
+    max-width: 935px;
     width: 100%;
+    height: 184px;
     padding: 0 20px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     box-sizing: border-box;
 
-    .avatar {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
+    .header-info__avatar {
+        width: 291.67px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        margin-right: 30px;
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            text-align: center;
+        }
+    }
+}
+
+.header-info__about {
+    width: 613px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .top-title {
+        height: 30px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .name {
+            color: #262626;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 32px;
+            margin: -5px 0 -6px;
+        }
+
+        .check-logo {
+            display: flex;
+            align-items: center;
+            margin-left: 7px;
+        }
+
+        .btn.subscribe {
+            margin-left: 20px;
+        }
+    }
+
+    .statistics {
+        height: 18px;
+        box-sizing: border-box;
+        margin-bottom: 22px;
+
+        & .statistics__block:nth-child(-n+2) {
+            margin-right: 35px;
+        }
+    }
+
+    .short-about {
+        font-size: 16px;
+        line-height: 24px;
+        word-wrap: break-word;
+
+        span a {
+            color: #00376B;
+        }
     }
 }

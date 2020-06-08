@@ -2,6 +2,30 @@ body, html {
   margin: 0;
   padding: 0;
 }
+body a, html a {
+  text-decoration: none;
+}
+body .btn, html .btn {
+  height: 30px;
+  background-color: #0095f6;
+  box-sizing: border-box;
+  font-weight: 600;
+  padding: 5px 9px;
+  margin-right: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+body .text, html .text {
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+body .text .bold, html .text .bold {
+  font-weight: 600;
+}
 
 .header__nav-container {
   box-sizing: border-box;
@@ -15,11 +39,6 @@ body, html {
   z-index: 10;
   display: flex;
   align-items: center;
-}
-
-main {
-  position: relative;
-  top: 54px;
 }
 
 .header__navbar {
@@ -73,21 +92,6 @@ main {
   justify-content: flex-end;
   align-items: center;
 }
-.header__navbar .header__right-links .btn.log-in {
-  height: 30px;
-  width: 62.73px;
-  background-color: #0095f6;
-  box-sizing: border-box;
-  font-weight: 600;
-  padding: 5px 9px;
-  margin-right: 0;
-  text-align: center;
-  font-size: 14px;
-  line-height: 18px;
-  border: none;
-  border-radius: 4px;
-  color: white;
-}
 .header__navbar .header__right-links .reg-link {
   width: 143.88px;
   height: 30px;
@@ -103,7 +107,81 @@ main {
 
 .header-info {
   position: relative;
-  top: 130px;
+  top: 85px;
+  margin: 0px auto 44px;
+  max-width: 935px;
+  width: 100%;
+  height: 184px;
+  padding: 0 20px;
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.header-info .header-info__avatar {
+  width: 291.67px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+}
+.header-info .header-info__avatar .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.header-info__about {
+  width: 613px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.header-info__about .top-title {
+  height: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.header-info__about .top-title .name {
+  color: #262626;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  margin: -5px 0 -6px;
+}
+.header-info__about .top-title .check-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 7px;
+}
+.header-info__about .top-title .btn.subscribe {
+  margin-left: 20px;
+}
+.header-info__about .statistics {
+  height: 18px;
+  box-sizing: border-box;
+  margin-bottom: 22px;
+}
+.header-info__about .statistics .statistics__block:nth-child(-n+2) {
+  margin-right: 35px;
+}
+.header-info__about .short-about {
+  font-size: 16px;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+.header-info__about .short-about span a {
+  color: #00376B;
+}
+
+.main {
+  position: relative;
+  top: 150px;
   margin: 0 auto;
   max-width: 975px;
   width: 100%;
@@ -111,11 +189,6 @@ main {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-}
-.header-info .avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,17 @@
+.header__nav-container {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 54px;
+    position: fixed;
+    border-bottom: 0.5px solid lightgrey;
+    background-color: white;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
 .header__navbar {
     margin: 0 auto;
     max-width: 975px;
@@ -56,22 +70,6 @@
         justify-content: flex-end;
         align-items: center;
 
-        .btn.log-in {
-            height: 30px;
-            width: 62.73px;
-            background-color: #0095f6;
-            box-sizing: border-box;
-            font-weight: 600;
-            padding: 5px 9px;
-            margin-right: 0;
-            text-align: center;
-            font-size: 14px;
-            line-height: 18px;
-            border: none;
-            border-radius: 4px;
-            color: white;
-        }
-        
         .reg-link {
             width: 143.88px;
             height: 30px;
