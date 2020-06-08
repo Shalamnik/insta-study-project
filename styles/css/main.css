@@ -18,12 +18,13 @@ body .btn, html .btn {
   border: none;
   border-radius: 4px;
   color: white;
+  cursor: pointer;
 }
 body .text, html .text {
   color: #262626;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
-body .text .bold, html .text .bold {
+body .bold, html .bold {
   font-weight: 600;
 }
 
@@ -104,6 +105,9 @@ body .text .bold, html .text .bold {
   vertical-align: baseline;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
+.header__navbar .header__right-links .btn {
+  width: 62.73px;
+}
 
 .header-info {
   position: relative;
@@ -115,7 +119,7 @@ body .text .bold, html .text .bold {
   padding: 0 20px;
   display: flex;
   align-items: flex-start;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 .header-info .header-info__avatar {
   width: 291.67px;
@@ -160,6 +164,7 @@ body .text .bold, html .text .bold {
   margin-left: 7px;
 }
 .header-info__about .top-title .btn.subscribe {
+  width: 111.55px;
   margin-left: 20px;
 }
 .header-info__about .statistics {
@@ -181,14 +186,72 @@ body .text .bold, html .text .bold {
 
 .main {
   position: relative;
-  top: 150px;
+  top: 85px;
   margin: 0 auto;
-  max-width: 975px;
+  max-width: 935px;
   width: 100%;
   padding: 0 20px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: content-box;
+}
+.main .main__navbar {
+  width: 100%;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 18px;
+  border-top: 1px solid lightgrey;
+}
+.main .main__navbar .focused {
+  border-top: 1px solid black;
+  color: #262626;
+}
+.main .main__navbar a:first-child {
+  margin-right: 60px;
+}
+.main .main__navbar a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #8e8e8e;
+  cursor: pointer;
+}
+.main .main__navbar a span {
+  margin-left: 6px;
+}
+.main .main__gallery {
+  position: relative;
+  margin: 0 auto;
+  max-width: 935px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+}
+.main .main__gallery .img-block {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.main .main__gallery .img-block .img-block__img {
+  width: 33%;
+  height: auto;
+}
+.main .main__gallery .img-block .img-block__img img {
+  width: 100%;
+  max-width: 293px;
+}
+.main .main__gallery .img-block .img-block__img:nth-child(-n+2) {
+  margin-right: 28px;
+}
+.main .main__gallery .img-block:not(:first-child) {
+  margin-top: 28px;
 }
 
 /*# sourceMappingURL=main.css.map */
