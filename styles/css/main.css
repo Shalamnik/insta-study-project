@@ -23,7 +23,7 @@ body .text, html .text {
   color: #262626;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
-body .text .bold, html .text .bold {
+body .bold, html .bold {
   font-weight: 600;
 }
 
@@ -181,14 +181,37 @@ body .text .bold, html .text .bold {
 
 .main {
   position: relative;
-  top: 150px;
+  top: 85px;
   margin: 0 auto;
-  max-width: 975px;
+  max-width: 935px;
   width: 100%;
   padding: 0 20px;
   display: flex;
   align-items: center;
   box-sizing: border-box;
+  border-top: 1px solid lightgrey;
+}
+.main .main__navbar {
+  width: 100%;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 18px;
+}
+.main .main__navbar a:first-child {
+  margin-right: 60px;
+  border-top: 1px solid black;
+}
+.main .main__navbar a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.main .main__navbar a span {
+  margin-left: 6px;
 }
 
 /*# sourceMappingURL=main.css.map */
