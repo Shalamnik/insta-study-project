@@ -200,11 +200,9 @@ body .bold, html .bold {
   letter-spacing: 1px;
   line-height: 18px;
 }
-.main .main__navbar .unfocused {
-  color: #8e8e8e !important;
-}
 .main .main__navbar .focused {
   border-top: 1px solid black;
+  color: #262626;
 }
 .main .main__navbar a:first-child {
   margin-right: 60px;
@@ -214,6 +212,7 @@ body .bold, html .bold {
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  color: #8e8e8e;
 }
 .main .main__navbar a span {
   margin-left: 6px;

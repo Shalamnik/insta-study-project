@@ -19,12 +19,13 @@
         letter-spacing: 1px;
         line-height: 18px;
 
-        .unfocused {
-            color: #8e8e8e !important;
-        }
+        // .unfocused {
+        //     color: #8e8e8e !important;
+        // }
 
         .focused {
             border-top: 1px solid black;
+            color: #262626;
         }
 
         a:first-child {
@@ -36,6 +37,7 @@
             display: flex;
             align-items: center;
             text-transform: uppercase;
+            color: #8e8e8e;
 
             span {
                 margin-left: 6px;
