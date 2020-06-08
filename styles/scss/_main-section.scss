@@ -19,9 +19,16 @@
         letter-spacing: 1px;
         line-height: 18px;
 
+        .unfocused {
+            color: #8e8e8e !important;
+        }
+
+        .focused {
+            border-top: 1px solid black;
+        }
+
         a:first-child {
             margin-right: 60px;
-            border-top: 1px solid black;
         }
 
         a {

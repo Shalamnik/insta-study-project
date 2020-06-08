@@ -200,9 +200,14 @@ body .bold, html .bold {
   letter-spacing: 1px;
   line-height: 18px;
 }
+.main .main__navbar .unfocused {
+  color: #8e8e8e !important;
+}
+.main .main__navbar .focused {
+  border-top: 1px solid black;
+}
 .main .main__navbar a:first-child {
   margin-right: 60px;
-  border-top: 1px solid black;
 }
 .main .main__navbar a {
   height: 100%;
