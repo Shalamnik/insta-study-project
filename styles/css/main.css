@@ -36,6 +36,36 @@ main {
   height: 36px;
   margin-top: 14px;
 }
+.header__navbar .header__search {
+  border: 1px solid lightgrey;
+  min-width: 125px;
+  width: 215px;
+  height: 28px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.header__navbar .header__search input {
+  text-align: center;
+  margin-top: 1px;
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 3px 5px;
+}
+.header__navbar .header__search input:focus {
+  outline: none;
+  text-align: left;
+}
+.header__navbar .header__search .search-img {
+  position: relative;
+  top: 0px;
+  left: 72px;
+}
+.header__navbar .header__search .quit-img {
+  position: relative;
+  top: -21px;
+  left: 189px;
+}
 .header__navbar .header__right-links {
   width: 360px;
   height: 30px;
@@ -69,37 +99,6 @@ main {
   text-decoration: none;
   vertical-align: baseline;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
-
-.header__search {
-  border: 1px solid lightgrey;
-  min-width: 125px;
-  width: 215px;
-  height: 28px;
-  border-radius: 3px;
-  box-sizing: border-box;
-}
-.header__search input {
-  text-align: center;
-  margin-top: 1px;
-  border: none;
-  font-size: 14px;
-  line-height: 18px;
-  padding: 3px 5px;
-}
-.header__search input:focus {
-  outline: none;
-  text-align: left;
-}
-.header__search .search-img {
-  position: relative;
-  top: 0px;
-  left: 72px;
-}
-.header__search .quit-img {
-  position: relative;
-  top: -21px;
-  left: 189px;
 }
 
 /*# sourceMappingURL=main.css.map */
