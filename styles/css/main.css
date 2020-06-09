@@ -391,10 +391,29 @@ body .bold, html .bold {
   justify-content: space-between;
   flex-grow: 1;
 }
+.main .main__gallery .img-block:not(:first-child) {
+  margin-top: 26px;
+}
+@media screen and (max-width: 576px) {
+  .main .main__gallery .img-block:not(:first-child) {
+    margin-top: 0px;
+  }
+}
 .main .main__gallery .img-block .img-block__img {
+  position: relative;
   width: 33%;
   height: auto;
   cursor: pointer;
+}
+.main .main__gallery .img-block .img-block__img .mini-img {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 2;
+}
+.main .main__gallery .img-block .img-block__img .mini-img img {
+  width: 30px;
+  border: 1px solid white;
 }
 .main .main__gallery .img-block .img-block__img img {
   position: relative;
@@ -412,12 +431,17 @@ body .bold, html .bold {
 .main .main__gallery .img-block .img-block__img:nth-child(-n+2) {
   margin-right: 28px;
 }
+@media screen and (max-width: 576px) {
+  .main .main__gallery .img-block .img-block__img:nth-child(-n+2) {
+    margin-right: 0;
+  }
+}
 .main .main__gallery .img-block .img-block__img .img-statistics {
   display: flex;
   flex-direction: row;
-  position: relative;
-  justify-content: center;
-  bottom: 50%;
+  position: absolute;
+  left: 25%;
+  bottom: 45%;
   z-index: 0;
   color: white;
 }
