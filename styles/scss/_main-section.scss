@@ -103,25 +103,78 @@
             justify-content: space-between;
             flex-grow: 1;
 
+            &:not(:first-child) {
+                margin-top: 26px;
+
+                @media screen and (max-width: 576px) {
+                    margin-top: 0px;
+                }
+            }
+
             .img-block__img {
+                position: relative;
                 width: 33%;
                 height: auto;
+                cursor: pointer;
+
+                .mini-img {
+                    position: absolute;
+                    right: 5px;
+                    top: 5px;
+                    z-index: 2;
+                    img{
+                        width: 30px;
+                        border: 1px solid white;
+                    }
+                }
 
                 img {
+                    position: relative;
                     width: 100%;
                     max-width: 293px;
+                    z-index: 1;
+
+                    &:hover {
+                        z-index: 0;
+                        filter: brightness(70%);
+                    }
+
+                    &:hover + .img-statistics {
+                        z-index: 1;
+                    }
+
                 }
 
                 &:nth-child(-n+2) {
                     margin-right: 28px;
+
+                    @media screen and (max-width: 576px) {
+                        margin-right: 0;
+                    }                    
+                }
+
+                .img-statistics {
+                    display: flex;
+                    flex-direction: row;
+                    position: absolute;
+                    left: 25%;
+                    bottom: 45%;
+                    z-index: 0;
+                    color: white;
+
+                    .bold {
+                        margin-left: 8px;
+                    }
+
+                    .comments {
+                        margin-left: 15px;
+                    }
+
+                    img {
+                        width: 16px;
+                    }
                 }
             }
         }
-
-        .img-block:not(:first-child) {
-            margin-top: 28px;
-        }
-
-
     }
 }
