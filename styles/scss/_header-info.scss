@@ -10,6 +10,10 @@
     align-items: flex-start;
     box-sizing: content-box;
 
+    @media screen and (max-width: 576px) {
+        display: block;
+    }
+
     .header-info__avatar {
         width: 291.67px;
         height: 100%;
@@ -18,8 +22,10 @@
         margin-right: 30px;
 
         @media screen and (max-width: 576px) {
-            width: 120px;
+            display: block;
+            width: 91px;
             height: 91px;
+            float: left;
         }
 
         .avatar {
@@ -31,7 +37,6 @@
             @media screen and (max-width: 576px) {
                 width: 77px;
                 height: 77px;
-                float: left;
             }
         }
     }
@@ -42,6 +47,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
+    @media screen and (max-width: 576px) {
+        width: 100%;
+        height: 300px;
+        display: block;
+    }
 
     .top-title {
         height: 30px;
@@ -92,8 +103,45 @@
         box-sizing: border-box;
         margin-bottom: 22px;
 
+        @media screen and (max-width: 576px) {
+            display: none;
+        }
+
         & .statistics__block:nth-child(-n+2) {
             margin-right: 35px;
+
+            @media screen and (max-width: 576px) {
+                margin: 0;
+            }
+        }
+    }
+
+    .mobile-statistics {
+        display: none;
+
+        .statistics__block {
+            height: 36px;
+            width: 31%;
+            display: inline-block;
+            padding: 12px 0;
+        }
+
+        .text {
+            color: #8E8E8E;
+        }
+
+        .bold {
+            color: #262626;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 100%;
+            height: 61px;
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            border-top: 1px solid rgb(219, 219, 219);
+            margin-bottom: 0;
         }
     }
 
@@ -101,6 +149,12 @@
         font-size: 16px;
         line-height: 24px;
         word-wrap: break-word;
+
+        @media screen and (max-width: 576px) {
+            padding: 50px 0 20px 0;
+            font-size: 14px;
+            line-height: 20px;
+        }
 
         span a {
             color: #00376B;
