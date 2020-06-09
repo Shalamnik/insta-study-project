@@ -145,11 +145,24 @@ body .bold, html .bold {
   justify-content: center;
   margin-right: 30px;
 }
+@media screen and (max-width: 576px) {
+  .header-info .header-info__avatar {
+    width: 120px;
+    height: 91px;
+  }
+}
 .header-info .header-info__avatar .avatar {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .header-info .header-info__avatar .avatar {
+    width: 77px;
+    height: 77px;
+    float: left;
+  }
 }
 
 .header-info__about {
@@ -162,9 +175,20 @@ body .bold, html .bold {
   height: 30px;
   box-sizing: border-box;
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+  .header-info__about .top-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.header-info__about .top-title .name-check {
+  display: flex;
+  flex-direction: row;
 }
 .header-info__about .top-title .name {
   color: #262626;
@@ -180,9 +204,14 @@ body .bold, html .bold {
   align-items: center;
   margin-left: 7px;
 }
-.header-info__about .top-title .btn.subscribe {
+.header-info__about .top-title .subscribe {
   width: 111.55px;
   margin-left: 20px;
+}
+@media screen and (max-width: 576px) {
+  .header-info__about .top-title .subscribe {
+    margin: 10px 0 0 0;
+  }
 }
 .header-info__about .statistics {
   height: 18px;
