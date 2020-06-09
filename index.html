@@ -4,49 +4,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/css/main.css">
     <title>Instagram</title>
 </head>
 
 <body>
-    
-    <div class="container-fluid">
-        <header>
-            <div class="navbar">
-                <div class="navbar-brand">
-                    <img src="img/title.png" alt="">
+
+    <header class="header">
+        <div class="header__nav-container">
+            <div class="header__navbar">
+                <div class="header__logo">
+                    <a href="https://www.instagram.com/"><img src="img/logo.png" alt=""></a>
                 </div>
-                <div class="nav-item">
-                    Search
+                <div class="header__search">
+                    <img class="search-img" src="img/search.png" alt="search-img">
+                    <input type="text" placeholder="Поиск">
+                    <img hidden="true" src="img/quit-search.png" alt="quit-img" class="quit-img">
                 </div>
-                <div class="nav-item">
-                    Log in
+                <div class="header__right-links">
+                    <button type="button" class="btn log-in">Войти</button>
+                    <a class="reg-link"
+                        href="https://www.instagram.com/accounts/emailsignup/?hl=ru">Зарегистрироваться</a>
                 </div>
             </div>
-        </header>
+        </div>
+        <div class="header-info">
+            <div class="header-info__avatar">
+                <img class="avatar" src="img/avatar.jpg" alt="user-avatar">
+            </div>
+            <div class="header-info__about">
+                <div class="top-title">
+                    <div class="name-check">
+                        <span class="text name">batmanarkham</span>
+                        <span class="check-logo"><img src="img/check-logo.png" alt="check-logo"></span>
+                    </div>
+                    <div class="subscribe"><button class="btn">Подписаться</button></div>
+                </div>
+                <div class="statistics">
+                    <span class="statistics__block text">
+                        <span class="bold">330</span> публикаций
+                    </span>
+                    <span class="statistics__block text">
+                        <span class="bold">458тыс.</span> подписчиков
+                    </span>
+                    <span class="statistics__block text">
+                        <span class="bold">25</span> подписок
+                    </span>
+                </div>
+                <div class="short-about text">
+                    <span class="bold">Batman Arkham</span> <br>
+                    <span>
+                        The Official Instagram home of the iconic Batman Arkham series, created by <br>
+                        <a href="#">@rocksteadygames</a>, <a href="#">@wbgames</a>,
+                        and <a href="#">@dccomics</a> <a href="#">#bethebatman</a> <br>
+                    </span>
+                    <span class="bold"><a href="#">www.batmanreturntoarkham.com</a></span>
+                </div>
+                <div class="mobile-statistics statistics">
+                    <div class="statistics__block text">
+                        <span class="bold">330</span><br> публикаций
+                    </div>
+                    <div class="statistics__block text">
+                        <span class="bold">458тыс.</span><br> подписчиков
+                    </div>
+                    <div class="statistics__block text">
+                        <span class="bold">25</span><br> подписок
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        <main>
+    <main class="main">
+        <div class="main__navbar text bold">
+            <a class="focused">
+                <img src="img/public-crop.png" alt="publics-img">
+                <span>публикации</span>
+            </a>
+            <a>
+                <img src="img/mark-crop.png" alt="marks-img">
+                <span>отметки</span>
+            </a>
+        </div>
+        <div class="main__gallery">
+            <div class="img-block">
+                <div class="img-block__img">
+                    <span class="mini-img">
+                        <img src="img/batman-img/1.jpg" alt="mini-img-1">
+                    </span>
+                    <img src="img/batman-img/1.jpg" alt="img-1">
+                    <div class="img-statistics">
+                        <span class="likes">
+                            <img src="img/like.png" alt="" class="like-img">
+                            <span class="bold">500</span>
+                        </span>
+                        <span class="comments">
+                            <img src="img/comment.png" alt="" class="comment-img">
+                            <span class="bold">50</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="img-block__img">
+                    <span class="mini-img">
+                        <img src="img/batman-img/2.jpg" alt="mini-img-2">
+                    </span>
+                    <img src="img/batman-img/2.jpg" alt="img-2">
+                    <div class="img-statistics">
+                        <span class="likes">
+                            <img src="img/like.png" alt="" class="like-img">
+                            <span class="bold">500</span>
+                        </span>
+                        <span class="comments">
+                            <img src="img/comment.png" alt="" class="comment-img">
+                            <span class="bold">50</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="img-block__img">
+                    <span class="mini-img">
+                        <img src="img/batman-img/3.jpg" alt="mini-img-3">
+                    </span>
+                    <img src="img/batman-img/3.jpg" alt="img-3">
+                    <div class="img-statistics">
+                        <span class="likes">
+                            <img src="img/like.png" alt="" class="like-img">
+                            <span class="bold">500</span>
+                        </span>
+                        <span class="comments">
+                            <img src="img/comment.png" alt="" class="comment-img">
+                            <span class="bold">50</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-block">
+                <div class="img-block__img">
+                    <span class="mini-img">
+                        <img src="img/batman-img/4.jpg" alt="mini-img-4">
+                    </span>
+                    <img src="img/batman-img/4.jpg" alt="img-4">
+                    <div class="img-statistics">
+                        <span class="likes">
+                            <img src="img/like.png" alt="" class="like-img">
+                            <span class="bold">500</span>
+                        </span>
+                        <span class="comments">
+                            <img src="img/comment.png" alt="" class="comment-img">
+                            <span class="bold">50</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="img-block__img">
+                    <span class="mini-img">
+                        <img src="img/batman-img/5.jpg" alt="mini-img-5">
+                    </span>
+                    <img src="img/batman-img/5.jpg" alt="img-5">
+                    <div class="img-statistics">
+                        <span class="likes">
+                            <img src="img/like.png" alt="" class="like-img">
+                            <span class="bold">500</span>
+                        </span>
+                        <span class="comments">
+                            <img src="img/comment.png" alt="" class="comment-img">
+                            <span class="bold">50</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="img-block__img">
+                    <span class="mini-img">
+                        <img src="img/batman-img/6.jpg" alt="mini-img-6">
+                    </span>
+                    <img src="img/batman-img/6.jpg" alt="img-6">
+                    <div class="img-statistics">
+                        <span class="likes">
+                            <img src="img/like.png" alt="" class="like-img">
+                            <span class="bold">500</span>
+                        </span>
+                        <span class="comments">
+                            <img src="img/comment.png" alt="" class="comment-img">
+                            <span class="bold">50</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-block">
+                <div class="img-block__img">
+                    <span class="mini-img">
+                        <img src="img/batman-img/7.jpg" alt="mini-img-7">
+                    </span>
+                    <img src="img/batman-img/7.jpg" alt="img-7">
+                    <div class="img-statistics">
+                        <span class="likes">
+                            <img src="img/like.png" alt="" class="like-img">
+                            <span class="bold">500</span>
+                        </span>
+                        <span class="comments">
+                            <img src="img/comment.png" alt="" class="comment-img">
+                            <span class="bold">50</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="img-block__img">
+                    <span class="mini-img">
+                        <img src="img/batman-img/8.jpg" alt="mini-img-8">
+                    </span>
+                    <img src="img/batman-img/8.jpg" alt="img-8">
+                    <div class="img-statistics">
+                        <span class="likes">
+                            <img src="img/like.png" alt="" class="like-img">
+                            <span class="bold">500</span>
+                        </span>
+                        <span class="comments">
+                            <img src="img/comment.png" alt="" class="comment-img">
+                            <span class="bold">50</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="img-block__img">
+                    <span class="mini-img">
+                        <img src="img/batman-img/9.jpg" alt="mini-img-9">
+                    </span>
+                    <img src="img/batman-img/9.jpg" alt="img-9">
+                    <div class="img-statistics">
+                        <span class="likes">
+                            <img src="img/like.png" alt="" class="like-img">
+                            <span class="bold">500</span>
+                        </span>
+                        <span class="comments">
+                            <img src="img/comment.png" alt="" class="comment-img">
+                            <span class="bold">50</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-        </main>
 
-        <footer>
-            
-        </footer>
+    <footer>
 
-    </div>
-    
+    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+    <script src="js/focus-main-navbar.js"></script>
+    <script src="js/focus-search.js"></script>
 </body>
 
 </html>

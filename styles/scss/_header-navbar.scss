@@ -1,0 +1,106 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .header__nav-container {
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    height: 54px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    background-color: white;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+}
+
+.header__navbar {
+    max-width: 975px;
+    width: 100%;
+    height: 54px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 576px) {
+        justify-content: space-around;
+    }
+
+    .header__logo {
+        max-width: 360px;
+        height: 36px;
+        margin-top: 14px;
+    }
+
+    .header__search {
+        border: 1px solid rgb(219, 219, 219);
+        position: relative;
+        left: 7.5%;
+        width: 215px;
+        height: 28px;
+        border-radius: 3px;
+        box-sizing: border-box;
+
+        @media screen and (max-width: 576px) {
+            display:none;
+        }
+    
+        input {
+            text-align: center;
+            margin-top: 1px;
+            border: none;
+            font-size: 14px;
+            line-height: 18px;
+            padding: 3px 5px;
+    
+            &:focus {
+                outline: none;
+                text-align: left;
+            }
+        }
+    
+        .search-img {
+            position: relative;
+            top: 0px;
+            left: 72px;
+        }
+    
+        .quit-img {
+            position: relative;
+            top: -21px;
+            left: 189px;
+        }
+        
+    }
+
+    .header__right-links {
+        max-width: 360px;
+        height: 30px;
+        padding-left: 24px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .reg-link {
+            width: 143.88px;
+            height: 30px;
+            color: rgba(var(--d69,0,149,246),1);
+            font-weight: 600;
+            line-height: 28px;
+            font-size: 14px;
+            margin-left: 15px;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+        }
+
+        .btn {
+            width: 62.73px;
+        }
+    }
+}
