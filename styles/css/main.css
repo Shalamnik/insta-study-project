@@ -56,13 +56,20 @@ body .bold, html .bold {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 576px) {
+  .header__navbar {
+    justify-content: space-around;
+  }
+}
 .header__navbar .header__logo {
   max-width: 360px;
   height: 36px;
   margin-top: 14px;
 }
 .header__navbar .header__search {
-  border: 1px solid lightgrey;
+  border: 1px solid #dbdbdb;
+  position: relative;
+  left: 7.5%;
   width: 215px;
   height: 28px;
   border-radius: 3px;
