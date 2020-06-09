@@ -394,16 +394,41 @@ body .bold, html .bold {
 .main .main__gallery .img-block .img-block__img {
   width: 33%;
   height: auto;
+  cursor: pointer;
 }
 .main .main__gallery .img-block .img-block__img img {
+  position: relative;
   width: 100%;
   max-width: 293px;
+  z-index: 1;
+}
+.main .main__gallery .img-block .img-block__img img:hover {
+  z-index: 0;
+  filter: brightness(70%);
+}
+.main .main__gallery .img-block .img-block__img img:hover + .img-statistics {
+  z-index: 1;
 }
 .main .main__gallery .img-block .img-block__img:nth-child(-n+2) {
   margin-right: 28px;
 }
-.main .main__gallery .img-block:not(:first-child) {
-  margin-top: 28px;
+.main .main__gallery .img-block .img-block__img .img-statistics {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  bottom: 50%;
+  z-index: 0;
+  color: white;
+}
+.main .main__gallery .img-block .img-block__img .img-statistics .bold {
+  margin-left: 8px;
+}
+.main .main__gallery .img-block .img-block__img .img-statistics .comments {
+  margin-left: 15px;
+}
+.main .main__gallery .img-block .img-block__img .img-statistics img {
+  width: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

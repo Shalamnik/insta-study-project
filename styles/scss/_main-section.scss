@@ -106,22 +106,51 @@
             .img-block__img {
                 width: 33%;
                 height: auto;
+                cursor: pointer;
 
                 img {
+                    position: relative;
                     width: 100%;
                     max-width: 293px;
+                    z-index: 1;
+
+                    &:hover {
+                        z-index: 0;
+                        filter: brightness(70%);
+                    }
+
+                    &:hover + .img-statistics {
+                        z-index: 1;
+                    }
+
                 }
 
                 &:nth-child(-n+2) {
                     margin-right: 28px;
                 }
+
+                .img-statistics {
+                    display: flex;
+                    flex-direction: row;
+                    position: relative;
+                    justify-content: center;
+                    bottom: 50%;
+                    z-index: 0;
+                    color: white;
+
+                    .bold {
+                        margin-left: 8px;
+                    }
+
+                    .comments {
+                        margin-left: 15px;
+                    }
+
+                    img {
+                        width: 16px;
+                    }
+                }
             }
         }
-
-        .img-block:not(:first-child) {
-            margin-top: 28px;
-        }
-
-
     }
 }
