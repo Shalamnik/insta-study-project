@@ -15,12 +15,12 @@ for (let i = 1; i <= 3; i++) {
         imgBlock.append(miniImgBlock);
         
         // create img for gallery and append to img block
-        let imgSrc = `img/batman-img/${imgCount}`;
+        let imgSrc = `img/batman-img/${imgCount}.jpg`;
         let img = createImg(imgSrc, null);
         imgBlock.append(img);
 
         // create statistics blck for img
-        let statBlock = createElBlock('div', 'img-statisticks');
+        let statBlock = createElBlock('div', 'img-statistics');
 
         // create comments in stat block
         let likeBlock = createElBlock('span', 'likes');
@@ -44,11 +44,12 @@ for (let i = 1; i <= 3; i++) {
         // add statistics block to img block
         imgBlock.append(statBlock);
 
+        // add img block to block with images
+        blockWithImages.append(imgBlock);
+
         imgCount++;
     }
 
-    // add img block to block with images
-    blockWithImages.append(imgBlock);
     gallery.append(blockWithImages);
 }
 
